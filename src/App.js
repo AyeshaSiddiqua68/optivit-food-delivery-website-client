@@ -14,6 +14,7 @@ import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import NotFound from './Pages/NotFound/NotFound';
+import Services from './Pages/Home/Services/Services';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
+            </Route>
+            <Route to='/services'>
+              <Services></Services>
             </Route>
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
