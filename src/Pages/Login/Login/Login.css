@@ -1,0 +1,17 @@
+.login-form{
+    background-color: rgb(220, 231, 229);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.login-header{
+    color: rgb(10, 110, 92);
+    font-size: 35px;
+    font-weight: 700;
+}
+.form-input{
+    color: rgb(10, 10, 83);
+    font-size: 20px;
+    font-weight: 500;
+}

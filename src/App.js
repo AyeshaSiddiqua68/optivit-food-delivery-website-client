@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import AuthProvider from './contexts/AuthProvider';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,15 +11,17 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import About from './Pages/About/About';
 import Login from './Pages/Login/Login/Login';
-import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
+
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import NotFound from './Pages/NotFound/NotFound';
-import Services from './Pages/Home/Services/Services';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import AuthProvider from './contexts/AuthProvider';
+
 
 function App() {
   return (
     <div className="App">
-      
+      <AuthProvider>
         <Router>
           <Header></Header>
           <Switch>
@@ -34,20 +36,17 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
-            </Route>
-            <Route to='/services'>
-              <Services></Services>
-            </Route>
+            </Route>            
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
-            <Route path='*'>
+            {/* <Route path='*'>
              <NotFound></NotFound>
-            </Route>
+            </Route> */}
           </Switch>
           <Footer></Footer>
         </Router>
-     
+        </AuthProvider>
     </div>
   );
 }

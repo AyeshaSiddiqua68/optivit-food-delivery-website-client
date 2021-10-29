@@ -1,0 +1,82 @@
+{
+    "service": [
+        {
+            "name": "Cardiology Clinic",
+            "description": "All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children",
+            "point1": "Cardiac Electrophysiology",
+            "point2": "Nuclear Cardiology",
+            "point3": "Enchocardiography",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/08/service3.png",
+            "login": {
+                "username": "cardiology123",
+                "password": "cardiology",
+                "id": "ser1"
+            }
+        },
+        {
+            "name": "Pathology Clinic",
+            "description": "Pathology is the study of disease. It is the bridge between science and medicine. It underpins every aspect of patient care and treatment",
+            "point1": "Surgical Pathology",
+            "point2": "Histipathology",
+            "point3": "Cytopathology",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/08/service1.png",
+            "login": {
+                "username": "pathology123",
+                "password": "pathology",
+                "id": "ser2"
+            }
+        },
+        {
+            "name": "Laboratory Analysis",
+            "description": "Analyzing the radon or radon progeny concentrations with passive devices, or the act of radon or radon progeny measurement devices",
+            "point1": "Newborn Care",
+            "point2": "Umbilical Cord Appearance",
+            "point3": "Repositioning Techniques",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/08/service4.png",
+            "login": {
+                "username": "laboratory123",
+                "password": "laboratory",
+                "id": "ser3"
+            }
+        },
+        {
+            "name": "Pediatric Clinic",
+            "description": "Pediatric providers see patients from birth into early adulthood to make sure children achieve stay healthy.It includes health checkups",
+            "point1": "Clinic Laboratory",
+            "point2": "Research Analyst",
+            "point3": "Quality Assurance",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/08/service5.png",
+            "login": {
+                "username": "pediatric123",
+                "password": "pediatric",
+                "id": "ser4"
+            }
+        },
+        {
+            "name": "Dental Clinic",
+            "description": "We work hard to create the ultimate stress-free and comfortable dental experience. Schedule online or call to make an appointment",
+            "point1": "Dental Care",
+            "point2": "Clinical Labratory",
+            "point3": "Quality Assurance",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/11/slider_icon02.png",
+            "login": {
+                "username": "dental123",
+                "password": "dental",
+                "id": "ser5"
+            }
+        },
+        {
+            "name": "Blood Donation",
+            "description": "Get A Donation information. 100% Privacy Protected! Find what you are looking for Here. 99% Match on Get A Donation.",
+            "point1": "Clinic Laboratory",
+            "point2": "Blood Collection",
+            "point3": "Quality Assurance",
+            "img": "https://7oroof.com/tfdemos/medcity/wp-content/uploads/2020/11/slider_icon04.png",
+            "login": {
+                "username": "blood123",
+                "password": "blood",
+                "id": "ser6"
+            }
+        }
+    ]
+}
