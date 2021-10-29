@@ -2,11 +2,25 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChang
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 
+// import{useHistory, useLocation} from 'react-router-dom'
+
+
+
 
 
 initializeAuthentication();
 
 const useFirebase = () => {
+//for redirect----------------
+// const history=useHistory()
+//     const location=useLocation()
+
+//     const url=location.state?.from||"/home"
+    //--------------------------
+
+
+
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -18,15 +32,24 @@ const useFirebase = () => {
 
     const auth = getAuth();
 
+
+    const googleProvider = new GoogleAuthProvider();
+
+
+
     //google sign in
     const signInUsingGoogle = () => {
         setIsLoading(true);
-        const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user)
-            })
-            .finally(() => setIsLoading(false));
+        // const googleProvider = new GoogleAuthProvider();
+
+        return signInWithPopup(auth, googleProvider)
+            // .then(result => {
+            //     setUser(result.user)
+
+            .finally(() => {setIsLoading(false)});
+
+            // })
+            // .finally(() => setIsLoading(false));
 
     }
 

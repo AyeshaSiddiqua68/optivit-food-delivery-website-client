@@ -2,9 +2,37 @@ import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css'
 
+
+//added for redirect --------------
+ import{useHistory, useLocation} from 'react-router-dom'
+
+
+
 //login page
 const Login = () => {
     const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, toggleLogin, isLogin, handleResetPassword, handleNameChange } = useAuth();
+
+
+    //added for redirect----------------
+    const history=useHistory()
+    const location=useLocation()
+
+    const url=location.state?.from||"/home"
+
+
+    const handleGoogleLogin=()=>{
+        signInUsingGoogle()
+        .then(result=>{
+           
+            history.push(url)
+        })
+    }
+
+//-----------------------------------------
+
+
+
+
     return (
         // email & password sign in part
         <div className="mx-5 mt-5 login-form">
@@ -50,7 +78,7 @@ const Login = () => {
             <br />
             <div><h4><strong>-----------OR----------</strong></h4></div>
             <br />
-            <button onClick={signInUsingGoogle} className="btn btn-primary">Google Sign In</button>
+            <button onClick={handleGoogleLogin} className="btn btn-primary">Google Sign In</button>
 
         </div>
     );
