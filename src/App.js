@@ -16,6 +16,9 @@ import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AuthProvider from './contexts/AuthProvider';
+import AdminDashboard from './Pages/AdminDashboard/AdminDashboard';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import AddCustomer from './Pages/AddCustomer/AddCustomer';
 
 
 function App() {
@@ -36,17 +39,27 @@ function App() {
             </Route>
             <Route path='/login'>
               <Login></Login>
-            </Route>            
+            </Route>
+            <Route path='/placeOrder'>
+              <PlaceOrder></PlaceOrder>
+            </Route>
+            <Route path='/adminDashboard'>
+              <AdminDashboard></AdminDashboard>
+            </Route>
+            <Route path="/addCustomer">
+              <AddCustomer></AddCustomer>
+            </Route>
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+
             {/* <Route path='*'>
              <NotFound></NotFound>
             </Route> */}
           </Switch>
           <Footer></Footer>
         </Router>
-        </AuthProvider>
+      </AuthProvider>
     </div>
   );
 }

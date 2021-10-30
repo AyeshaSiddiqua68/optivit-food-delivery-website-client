@@ -159,6 +159,7 @@ const useFirebase = () => {
 
     return {
         user,
+        email,
         isLoading,
         signInUsingGoogle,
         logOut,
