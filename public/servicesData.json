@@ -1,56 +1,38 @@
 [
     {
         "id": "ser1",
-        "name": "Cardiology Clinic",
-        "description": "All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children and adult heart disease",
-        "point1": "Cardiac Electrophysiology",
-        "point2": "Nuclear Cardiology",
-        "point3": "Enchocardiography",
+        "name": "Vegetable Cocktail",
+        "description": "If you’re looking for a great party snack under 200 calories, you’ve found it. It’s not only low in calories, but this Vegetable Skewer Cocktail recipe is incredibly healthy overall.",
         "img": "https://i.ibb.co/prrjTTd/img14.jpg"
     },
     {
         "id": "ser2",
-        "name": "Pathology Clinic",
-        "description": "Pathology is the study of disease. It is the bridge between science and medicine. It underpins every aspect of patient care, from diagnostic testing and treatment advice to using cutting-edge genetic technologies and preventing disease.",
-        "point1": "Surgical Pathology",
-        "point2": "Histipathology",
-        "point3": "Cytopathology",
+        "name": "Healthy Salad",
+        "description": "Whether you are looking for a plant-based meal or a protein-packed healthy bowl, we've compiled a list of mouth-watering healthy salad recipes with a wide variety of palates.",
         "img": "https://i.ibb.co/NpP1rC6/img15.jpg"
     },
     {
         "id": "ser3",
-        "name": "Laboratory Analysis",
-        "description": "Analyzing the radon or radon progeny concentrations with passive devices, or the act of radon or radon progeny measurement devices",
-        "point1": "Newborn Care",
-        "point2": "Umbilical Cord Appearance",
-        "point3": "Repositioning Techniques",
+        "name": "Vegetable Beef",
+        "description": "A food dish that combines beef with a variety of other ingredients, such as vegetables, herbs, spices, and broth to create a savory dish, rich in flavor and often served as the main dish.",
         "img": "https://i.ibb.co/PC7CcTm/img16.jpg"
     },
     {
         "id": "ser4",
-        "name": "Pediatric Clinic",
-        "description": "Pediatric providers see patients from birth into early adulthood to make sure children achieve stay healthy.Our care includes preventive health checkups",
-        "point1": "Clinic Laboratory",
-        "point2": "Research Analyst",
-        "point3": "Quality Assurance",
+        "name": "Healthy Drink",
+        "description": "Need an alternative to sugary soda? Never fear: there are loads of fantastic alternatives that are healthy drinks! Infused waters, herbal teas, and homemade juices to the rescue!",
         "img": "https://i.ibb.co/k0VthWn/img17.jpg"
     },
     {
         "id": "ser5",
-        "name": "Dental Clinic",
-        "description": "We work hard to create the ultimate stress-free and comfortable dental experience. Schedule online or call to make an appointment. Voted Best Cosmetic Dent.",
-        "point1": "Clinic Laboratory",
-        "point2": "Dental Care",
-        "point3": "Quality Assurance",
+        "name": "Sushi Food & Drink",
+        "description": "While there are some popular ingredients like salmon and tuna that can be found year-round, sushi is the perfect example of Japan’s seasonality in cuisine.",
         "img": "https://i.ibb.co/92xfVY4/img18.jpg"
     },
     {
         "id": "ser6",
-        "name": "Blood Donation",
-        "description": "Get A Donation information. 100% Privacy Protected! Find what you are looking for Here. 99% Match on Get A Donation. Only relevant search results, Click here and Find.",
-        "point1": "Clinic Laboratory",
-        "point2": "Blood Collection",
-        "point3": "Quality Assurance",
+        "name": "Brown Coffee",
+        "description": "During roasting, coffee beans turn from green to tan and then brown. The longer they are roasted, the darker brown beans will be. Roasted coffee beans never become black.",
         "img": "https://i.ibb.co/LkCpyPy/img19.jpg"
     }
 ]

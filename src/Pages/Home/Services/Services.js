@@ -4,7 +4,7 @@ import Service from '../Service/Service';
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('servicesData.json')
+        fetch('https://stormy-savannah-30546.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
