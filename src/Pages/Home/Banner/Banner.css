@@ -1,0 +1,49 @@
+.carousel-title{
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FF575A;
+   
+}
+.banner-image{
+    height: 600px;
+}
+.banner-section{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.carousel-p{
+    font-weight: 700;
+    font-size: 28px;
+    
+}
+.loaction-btn{
+    background-color: rgb(238, 179, 169);
+    color: white;
+    border: 1px solid rgb(241, 140, 122);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.search-btn{
+    background-color:#FF575A ;
+    color: white;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.slider-icon{
+    background-color: white;
+    padding: 20px;
+   
+}
+.slider-icon:hover{
+    background-color: rgb(91, 221, 208);
+    padding: 10px;
+}
+.slider-icon img{
+    width: 50px;
+    height: 50px;
+}

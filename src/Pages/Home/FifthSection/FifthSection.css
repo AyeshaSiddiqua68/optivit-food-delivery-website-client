@@ -1,0 +1,25 @@
+.full-section{
+    background-color: #FFEEEE;
+}
+.each-part{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.title-fifth{
+    
+    color: #FF575A;
+    font-family: "Source Sans Pro", Sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.fifth-h1{
+    
+    color: #FF575A;
+    font-family: "Source Sans Pro", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}

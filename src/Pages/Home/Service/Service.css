@@ -12,7 +12,7 @@
 }
 .btn-read-more{
     border: none;
-    color: rgb(50, 197, 197) ;
+    color: #FF575A ;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
@@ -20,7 +20,7 @@
     border-radius: 15px; 
 }
 .btn-read-more:hover{
-    background-color: rgb(55, 209, 209);
+    background-color: #FF575A;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
