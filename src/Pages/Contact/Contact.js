@@ -16,21 +16,21 @@ const Contact = () => {
             {/* main part */}
             <div className="container">
                 <div className="row my-5">
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-sm-2 col-12">
                         <div>
                             <img className="w-15" src={logo4} alt="" />
                         </div>
                         <h4>Office Address</h4>
                         <p>Lane-03, Block-B, Section-06 <br /> Mirpur, Dhaka-1216, Bangladesh</p>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-sm-2 col-12">
                         <div>
                             <img className="w-40" src={logo5} alt="" />
                         </div>
                         <h4>Email Address</h4>
                         <p>ayesha68@gmail.com <br /> info49@gmail.com</p>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-sm-2 col-12">
                         <div>
                             <img className="w-25" src={logo6} alt="" />
                         </div>
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="container">
                 <div className="row p-5  ">
-                    <div className="col-md-6 left-part ">
+                    <div className="col-md-6 col-sm-12 col-12 left-part ">
                         <h1 className="text-danger fw-bold mt-4 p-4">Send Us Message</h1>
                         <input
                             className="footer-input mb-3 py-2 "
@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
 
 
-                    <div className="col-md-6 right-part">
+                    <div className="col-md-6 col-sm-12 col-12 right-part">
                         <h1 className="text-danger fw-bold mt-4 p-4">Get In Touch</h1>
                         <div className="row my-5 ">
                             <div className="col-md-4">

@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <>
             <Carousel variant="dark">
-                <Carousel.Item className="banner-image">
+                <Carousel.Item className="banner-image col-lg-12 col-sm-12 col-12">
                     <img
                         className="d-block w-100 "
                         src={banner1}
@@ -35,7 +35,7 @@ const Banner = () => {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="banner-image">
+                <Carousel.Item className="banner-image col-lg-12 col-sm-12 col-12">
                     <img
                         className="d-block w-100"
                         src={banner2}
@@ -62,7 +62,7 @@ const Banner = () => {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="banner-image">
+                <Carousel.Item className="banner-image col-lg-12 col-sm-12 col-12">
                     <img
                         className="d-block w-100"
                         src={banner3}

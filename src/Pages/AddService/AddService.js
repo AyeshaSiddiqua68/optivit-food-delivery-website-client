@@ -1,25 +1,24 @@
 import React from 'react';
-import './PlaceOrder.css'
+ import axios from 'axios';
+import './AddService.css'
 import { useForm } from "react-hook-form";
 import useFirebase from '../../hooks/useFirebase';
 
-const PlaceOrder = () => {
+const AddService = () => {
     const { user } = useFirebase();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch("http://localhost:5000/placeOrder", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(data)
+        axios.post('http://localhost:5000/foods',data)
+        .then(res=>{
+            if(res.data.insertetId){
+                alert('Added Successfully')
+            }
         })
-            .then(res => res.json())
-            .then(result => console.log(result))
-        console.log(data);
     };
     return (
         <div className="container  p-5">
-            <h1 className="mt-5 text-center fw-bold">Place an order</h1>
+            <h1 className="mt-5 text-center fw-bold">Add a brand new item!</h1>
             <div className="login-box form-background m-auto mt-5 w-100">
                 <div className="order-box border border d-flex align-items-center justify-content-center">
                     <div className="login-form">
@@ -35,12 +34,6 @@ const PlaceOrder = () => {
                                 {...register("price", { required: true })}
                                 className="w-100 p-2 m-2"
                                 placeholder="Price"
-                            />
-                            <br />
-                            <input
-                                {...register("email", { required: true })}
-                                className="w-100 p-2 m-2"
-                                placeholder="Email"
                             />
                             <br />
                             <input
@@ -67,4 +60,4 @@ const PlaceOrder = () => {
     );
 };
 
-export default PlaceOrder;
+export default AddService;

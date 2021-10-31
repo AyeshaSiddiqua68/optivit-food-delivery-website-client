@@ -46,7 +46,7 @@ const Foods = () => {
                        <td>{pd?.name}</td>
                        <td>{pd?.description}</td>
                        <td>{pd?.image}</td>
-                       <button onClick={()=>handleDelete(pd._id)} className="btn btn-danger p-2">Delete</button>
+                       <button onClick={()=>handleDelete(pd._id)} className="search-btn">Delete</button>
                    </tr>
                </tbody>
                ))}

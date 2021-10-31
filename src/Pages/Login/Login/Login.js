@@ -4,7 +4,7 @@ import './Login.css'
 
 
 //added for redirect --------------
- import{useHistory, useLocation} from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 
 
@@ -14,28 +14,30 @@ const Login = () => {
 
 
     //added for redirect----------------
-    const history=useHistory()
-    const location=useLocation()
+    const history = useHistory()
+    const location = useLocation()
 
-    const url=location.state?.from||"/home"
+    const url = location.state?.from || "/home"
 
 
-    const handleGoogleLogin=()=>{
+    const handleGoogleLogin = () => {
         signInUsingGoogle()
-        .then(result=>{
-           
-            history.push(url)
-        })
+            .then(result => {
+
+                history.push(url)
+            })
     }
 
-//-----------------------------------------
-
-
-
-
     return (
-        // email & password sign in part
-        <div className="mx-5 mt-5 login-form">
+        //  google sign in part 
+        
+        <div className="mx-5 mt-5 login-form my-5">
+            <button onClick={handleGoogleLogin} className="search-btn my-5">Google Sign In</button>
+            <br />
+            <div><h4><strong>-----------OR----------</strong></h4></div>
+            <br />
+
+             {/* email & password sign in part */}
             <form onSubmit={handleRegistration}>
                 <h3 className="login-header text-center">Please {isLogin ? 'Login' : 'Register'} </h3>
                 {!isLogin && <div className="row w-50 mx-auto mb-3">
@@ -70,15 +72,9 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="row mb-3 text-danger">{error}</div>
-                <button type="submit" className="btn btn-primary me-4">{isLogin ? 'Login' : 'Register'}</button>
-                <button type="button" onClick={handleResetPassword} className="btn btn-secondary btn-sm">Reset Password</button>
+                <button type="submit" className="search-btn me-4">{isLogin ? 'Login' : 'Register'}</button>
+                <button type="button" onClick={handleResetPassword} className="search-btn ">Reset Password</button>
             </form>
-
-            {/* google sign in part */}
-            <br />
-            <div><h4><strong>-----------OR----------</strong></h4></div>
-            <br />
-            <button onClick={handleGoogleLogin} className="btn btn-primary">Google Sign In</button>
 
         </div>
     );

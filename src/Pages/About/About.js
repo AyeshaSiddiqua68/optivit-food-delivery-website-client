@@ -10,13 +10,13 @@ const About = () => {
         <div>
             <div className="about-background my-5">
            <div className="row d-flex align-items-center justify-content-between ">
-               <div className="col-md-5">
+               <div className="col-md-5 col-sm-5 col-12">
                    <div className="p-5">
                    <h1 className="about-title">About Us</h1>
                    <p>Organic products are grown in environmentally friendly ways. Toxic or persistent pesticides and other agricultural chemicals are prohibited. There is also a focus on renewable resources and the conservation of soil and water.</p>
                    </div>
                </div>
-               <div className="col-md-5">
+               <div className="col-md-5 col-sm-5 col-12">
                    <img className="p-5 w-75" src={image1}alt="" />
                </div>
            </div>
@@ -26,12 +26,12 @@ const About = () => {
             <h1 className="another-title">Straight out of the oven to your doorstep</h1>
             <p>Driver Will Receive Visual And Sound Notification When Order Is Arrived Or Assigned</p>
         <div className="row my-5 d-flex align-items-center justify-content-around">
-           <div className="col-md-5">
+           <div className="col-md-5 col-sm-5 col-12">
                <div>
                    <img className="w-100" src={image2} alt="" />
                </div>
            </div>
-           <div className="col-md-5 p-5">
+           <div className="col-md-5 col-sm-5 col-12 p-5">
                <h5 className="story">THE STORY</h5>
                <h1 className="another-title">
                Best Service to fulfill your expectations.
@@ -47,7 +47,7 @@ const About = () => {
         <FifthSection></FifthSection>
         <div className="">
             <div className="row d-flex justify-content-around">
-                <div className="col-md-5">
+                <div className="col-md-5 col-sm-5 col-12">
                     <h5 className="story">ACHIEVEMENTS</h5>
                     <h1 className="another-title">Our Greatest Accomplishment</h1>
                     <p>We invite you to get acquainted with the most popular dishes for today. The most delicious and healthy dishes from our chefs. You can order this meal separately or as part of a meal plan.</p>
@@ -90,7 +90,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 col-sm-5 col-12">
                     <div>
                         <img className="w-100" src={image3} alt="" />
 

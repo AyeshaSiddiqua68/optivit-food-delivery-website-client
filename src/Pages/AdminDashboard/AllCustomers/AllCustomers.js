@@ -32,7 +32,7 @@ const AllCustomers = () => {
                        <td>{pd?.email}</td>
                        <td>{pd?.date}</td>
                        <td>{pd?.address}</td>
-                       <button className="btn btn-danger p-2">Delete</button>
+                       <button className="search-btn p-2">Delete</button>
                    </tr>
                </tbody>
                ))}

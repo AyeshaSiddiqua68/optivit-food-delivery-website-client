@@ -1,5 +1,5 @@
 .admin-area{
-    background-color: black;
+    background-color: #FF575A;
     color: white;
     height: 100vh;
 }
@@ -11,5 +11,5 @@
     cursor: pointer;
 }
 .admin-menu:hover{
-    color: turquoise;
+    color: rgb(238, 179, 169);
 }

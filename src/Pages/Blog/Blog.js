@@ -15,21 +15,21 @@ const Blog = () => {
                 <h1>Recent Blogs</h1>
             </div>
             <div className="row  my-4">
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image5} alt="" />
                     </div>
                     <h5>Breakfast Potatoes (Crispy + Tender)</h5>
                     <small>February 25, 2020</small>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image11} alt="" />
                     </div>
                     <h5>How to Make Your Breakfast Easy and Yummy</h5>
                     <small>June 28, 2020</small>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image12} alt="" />
                     </div>
@@ -38,21 +38,21 @@ const Blog = () => {
                 </div>
             </div>
             <div className="row  my-4">
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image13} alt="" />
                     </div>
                     <h5>Balance of proteins, fats and carbo. How do I get it?</h5>
                     <small>March 10, 2021</small>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image6} alt="" />
                     </div>
                     <h5>The importance of proper and healthy eating for your body</h5>
                     <small>July 12, 2021</small>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-6 col-12">
                     <div>
                         <img className="w-50" src={image9} alt="" />
                     </div>

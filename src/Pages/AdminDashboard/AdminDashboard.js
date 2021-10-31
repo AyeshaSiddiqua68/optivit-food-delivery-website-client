@@ -3,6 +3,7 @@ import Foods from '../Foods/Foods';
 import PlaceOrder from '../PlaceOrder/PlaceOrder';
 import AllCustomers from './AllCustomers/AllCustomers';
 import './AdminDashboard.css'
+import AddCustomer from '../AddCustomer/AddCustomer';
 
 const AdminDashboard = () => {
     const[manage, setManage]=useState("allCustomers");
@@ -19,20 +20,20 @@ const AdminDashboard = () => {
                                     className="admin-menup-3">
                                         All Customers 
                                     </li>
-                                    <li onClick={()=> setManage("placeOrder")}
+                                    <li onClick={()=> setManage("addCustomer")}
                                     className="admin-menup-3">
                                        Place Order
                                     </li>
                                     <li onClick={()=> setManage("control")}
                                     className="admin-menup-3">
-                                       Manage Foods
+                                       Manage Order
                                     </li>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-9 text-center">
                             <div className="right-section">
-                             {manage === "placeOrder" && <PlaceOrder></PlaceOrder>}
+                             {manage === "addCustomer" && <AddCustomer></AddCustomer>}
                              {manage === "control"&& <Foods></Foods>}
                              {manage==="allCustomers"&& <AllCustomers></AllCustomers>}
                             </div>

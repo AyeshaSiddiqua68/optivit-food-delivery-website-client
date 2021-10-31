@@ -21,6 +21,7 @@ import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import AddCustomer from './Pages/AddCustomer/AddCustomer';
 import Contact from './Pages/Contact/Contact';
 import Blog from './Pages/Blog/Blog';
+import AddService from './Pages/AddService/AddService';
 
 
 function App() {
@@ -48,22 +49,22 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <Route path='/placeOrder'>
-              <PlaceOrder></PlaceOrder>
-            </Route>
+            <PrivateRoute path='/placeOrder'>
+             <AddService></AddService>
+            </PrivateRoute>
             <PrivateRoute path='/adminDashboard'>
               <AdminDashboard></AdminDashboard>
             </PrivateRoute>
-            <Route path="/Xlogin/addcustomer">
+            <Route path="/login/addcustomer">
               <AddCustomer></AddCustomer>
             </Route>
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
 
-            {/* <Route path='*'>
-             <NotFound></NotFound>
-            </Route> */}
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>
