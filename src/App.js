@@ -19,6 +19,8 @@ import AuthProvider from './contexts/AuthProvider';
 import AdminDashboard from './Pages/AdminDashboard/AdminDashboard';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import AddCustomer from './Pages/AddCustomer/AddCustomer';
+import Contact from './Pages/Contact/Contact';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
@@ -37,16 +39,22 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/blog">
+              <Blog></Blog>
+            </Route>
             <Route path='/login'>
               <Login></Login>
             </Route>
             <Route path='/placeOrder'>
               <PlaceOrder></PlaceOrder>
             </Route>
-            <Route path='/adminDashboard'>
+            <PrivateRoute path='/adminDashboard'>
               <AdminDashboard></AdminDashboard>
-            </Route>
-            <Route path="/addCustomer">
+            </PrivateRoute>
+            <Route path="/Xlogin/addcustomer">
               <AddCustomer></AddCustomer>
             </Route>
             <PrivateRoute path="/service/:id">

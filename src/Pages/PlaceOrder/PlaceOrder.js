@@ -18,9 +18,9 @@ const PlaceOrder = () => {
         console.log(data);
     };
     return (
-        <div>
-            <h1 className="mt-5 text-center">Place an order</h1>
-            <div className="login-box m-auto mt-5 w-25">
+        <div className="container  p-5">
+            <h1 className="mt-5 text-center fw-bold">Place an order</h1>
+            <div className="login-box form-background m-auto mt-5 w-100">
                 <div className="order-box border border d-flex align-items-center justify-content-center">
                     <div className="login-form">
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -31,12 +31,12 @@ const PlaceOrder = () => {
                                 placeholder="Name"
                             />
                             <br />
-                            {/* <input
+                            <input
                                 {...register("email", { required: true })}
                                 className="w-100 p-2 m-2"
                                 placeholder="Email"
                             />
-                            <br /> */}
+                            <br />
                             <input
                                 {...register("description")}
                                 className="w-100 p-2 m-2"
@@ -52,7 +52,7 @@ const PlaceOrder = () => {
 
                             {errors.exampleRequired && <span>This field is required</span>}
 
-                            <input type="submit" value="Add" className="btn btn-info w-50" />
+                            <input type="submit" value="Submit" className="btn-read-more w-50" />
                         </form>
                     </div>
                 </div>

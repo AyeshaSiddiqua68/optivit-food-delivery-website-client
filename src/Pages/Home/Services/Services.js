@@ -10,6 +10,7 @@ const Services = () => {
     }, [])
     return (
         <div id="services" className=" container ">
+            <h1 className="my-5 section-title">Popular Menu</h1>
             <div className='row'>
                 {
                     services.map(service => <Service key={service.id}
