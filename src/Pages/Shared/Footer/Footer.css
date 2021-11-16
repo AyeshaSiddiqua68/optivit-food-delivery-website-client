@@ -1,4 +1,4 @@
-/* .text{
+.text{
     font-size: 60px;
     font-weight: bold;
 }
@@ -22,10 +22,12 @@
     color: white;
     
   }
-  
-  
   .footer-menu:hover {
-    color: orangered;
+    color: linear-gradient(
+      335.64deg,   
+      #ff589b -19.22%,
+      #ff136f 118.87%
+    ) !important;
   }
   .footer-input {
     padding: 8px;
@@ -34,7 +36,7 @@
     background-color: rgb(241, 236, 236);
   }
   .footer-container {
-   background-color: #272b35;
+   background-color: black;
     padding: 50px;
     color: rgb(216, 209, 209);
   }
@@ -42,4 +44,4 @@
   .maels-plan:hover{
       color: orangered;
   }
-   */
+  

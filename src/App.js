@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login/Login';
 import Signup from './Pages/Login/Signup/Signup';
 import ResetPassword from './Pages/Login/ResetPassword/ResetPassword';
 import Header from './Pages/Shared/Header/Header';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             
 
           </Switch>
-          {/* <Footer></Footer> */}
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
