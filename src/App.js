@@ -10,13 +10,14 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Pages/Login/Login/Login';
 import Signup from './Pages/Login/Signup/Signup';
 import ResetPassword from './Pages/Login/ResetPassword/ResetPassword';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-          {/* <Header></Header> */}
+          <Header></Header> 
           <Switch>
             <Route path='/login'>
               <Login></Login>
