@@ -6,67 +6,31 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Header from './Pages/Shared/Header/Header';
-import Footer from './Pages/Shared/Footer/Footer';
-import Home from './Pages/Home/Home/Home';
-import About from './Pages/About/About';
-import Login from './Pages/Login/Login/Login';
-
-import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
-import NotFound from './Pages/NotFound/NotFound';
-import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AuthProvider from './contexts/AuthProvider';
-import AdminDashboard from './Pages/AdminDashboard/AdminDashboard';
-import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
-import AddCustomer from './Pages/AddCustomer/AddCustomer';
-import Contact from './Pages/Contact/Contact';
-import Blog from './Pages/Blog/Blog';
-import AddService from './Pages/AddService/AddService';
-
+import Login from './Pages/Login/Login/Login';
+import Signup from './Pages/Login/Signup/Signup';
+import ResetPassword from './Pages/Login/ResetPassword/ResetPassword';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-          <Header></Header>
+          {/* <Header></Header> */}
           <Switch>
-            <Route exact path='/'>
-              <Home></Home>
-            </Route>
-            <Route path='/home'>
-              <Home></Home>
-            </Route>
-            <Route path="/about">
-              <About></About>
-            </Route>
-            <Route path="/contact">
-              <Contact></Contact>
-            </Route>
-            <Route path="/blog">
-              <Blog></Blog>
-            </Route>
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <PrivateRoute path='/placeOrder'>
-             <AddService></AddService>
-            </PrivateRoute>
-            <PrivateRoute path='/adminDashboard'>
-              <AdminDashboard></AdminDashboard>
-            </PrivateRoute>
-            <Route path="/login/addcustomer">
-              <AddCustomer></AddCustomer>
+            <Route path="/signup">
+              <Signup></Signup>
             </Route>
-            <PrivateRoute path="/service/:id">
-              <ServiceDetails></ServiceDetails>
-            </PrivateRoute>
+            <Route path="/reset">
+              <ResetPassword></ResetPassword>
+            </Route>
+            
 
-            <Route path='*'>
-              <NotFound></NotFound>
-            </Route>
           </Switch>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         </Router>
       </AuthProvider>
     </div>
