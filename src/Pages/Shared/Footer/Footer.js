@@ -18,12 +18,12 @@ const Footer = () => {
                             <div className="left-container text-start">
                                 <div className="d-flex">
                                     <img className="roundedCircle" src={logo} alt="" />
-                                    
+
                                 </div>
 
                                 <p className="mt-4 ">
                                     <small>
-                                    The best food technology is now a reality. Special cooking and delivery technologies allow you to buy fresh and healthy food. Experienced chefs and professional couriers.
+                                        The best food technology is now a reality. Special cooking and delivery technologies allow you to buy fresh and healthy food. Experienced chefs and professional couriers.
                                     </small>
                                 </p>
                                 <div className="social-icon">
@@ -54,7 +54,7 @@ const Footer = () => {
                                 <ul>
                                     <li className="footer-menu">Home</li>
                                     <li className="footer-menu" >About</li>
-                                    <li className="footer-menu">Services</li>                                   
+                                    <li className="footer-menu">Services</li>
                                     <li className="footer-menu">Contact</li>
                                 </ul>
                             </div>
@@ -90,16 +90,16 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-md-3 my-auto ms-auto">
-                        
-                  <img width="100%" className="my-auto ms-auto"
-                    
-                    src="https://web.programming-hero.com/static/media/ssl-commerce.1d268dce.png"
-                    alt=""
-                  />
-               
-                            
+
+                            <img width="100%" className="my-auto ms-auto"
+
+                                src="https://web.programming-hero.com/static/media/ssl-commerce.1d268dce.png"
+                                alt=""
+                            />
+
+
                         </div>
-                       
+
                     </div>
                 </div>
                 <div className="container">

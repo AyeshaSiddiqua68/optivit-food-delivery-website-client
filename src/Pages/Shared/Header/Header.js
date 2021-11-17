@@ -9,13 +9,13 @@ import './Header.css'
 const Header = () => {
   const { allAuthInfo } = useAuth();
   const { logOut, user } = allAuthInfo;
-  const { photoURL, email, displayName} = user;
+  const { photoURL, email, displayName } = user;
   return (
     <>
       <Navbar variant="light" sticky="top" collapseOnSelect expand="lg" className='navBar'>
         <Container>
-        <Navbar.Brand as={NavLink} to="/home"><img src={logo} alt="" /></Navbar.Brand>
-          <Navbar.Toggle  />
+          <Navbar.Brand as={NavLink} to="/home"><img src={logo} alt="" /></Navbar.Brand>
+          <Navbar.Toggle />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
               <Nav.Link className="item" as={NavLink} to="/home" >
@@ -132,7 +132,7 @@ export default Header;
 //                     <Navbar.Collapse className="justify-content-end">
 //                         <Nav.Link as={HashLink} to="/home#home" className='item'>Home</Nav.Link>
 //                         <Nav.Link as={HashLink} to="/about" className='item'>About</Nav.Link>
-                        
+
 //                         <Nav.Link as={HashLink} to="/contact" className='item'>Contact</Nav.Link>
 //                         <Nav.Link as={HashLink} to="/blog" className='item'>Blog</Nav.Link>
 //                         <Nav.Link as={HashLink} to="/placeOrder" className='item'>AddItem </Nav.Link>
