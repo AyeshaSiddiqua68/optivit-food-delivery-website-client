@@ -47,7 +47,7 @@ const SingleService = ({ service }) => {
               <h4>{name}</h4>
             </Card.Title>
             <Card.Text>
-              <p className="pb-0 mb-0">{description.slice(0, 80)}</p>
+              <p className="pb-0 mb-0">{description}</p>
             </Card.Text>
             <Card.Title>
               <h4 style={{ minHeight: "60px" }}>PRICE:{price}</h4>
