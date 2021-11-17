@@ -8,7 +8,7 @@ import banner3 from '../../../images/banner/banner9.jpg'
 //home page banner part
 const Banner = () => {
     return (
-        <>
+        <div className="w-100 mx-auto">
             <Carousel variant="dark">
                 <Carousel.Item className="banner-image col-lg-12 col-sm-12 col-12">
                     <img
@@ -21,13 +21,17 @@ const Banner = () => {
                             <div className="col-lg-6"></div>
 
                             <div className="col-lg-6 col-sm-6 col-6 d-flex justify-content-center align-items-center  ">
-                                <div className="banner-section p-4 ">
-                                    <h1 className='carousel-title'>Hungry?</h1>
+                                <div className="banner-section p-4 w-100 mx-auto my-auto ">
+                                    <h1 className='carousel-title'>You Hungry?</h1>
 
                                     <h1 className='carousel-p p-4'>Let's find something healthy delicious for you.</h1>
-                                    <p ><small>We love making our customers happy by serving them our tasty food! High-quality ingredients mixed with excellent service is the best recipe for a successful food truck.</small></p>
+                                    {/* <p ><small>We love making our customers happy by serving them our tasty food! High-quality ingredients mixed with excellent service is the best recipe for a successful food truck.</small></p> */}
+                                    <div>
+                                    <p>
                                     <input type="text" className="loaction-btn" placeholder="Enter Your Location" />
                                     <button className="search-btn">Search</button>
+                                    </p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -48,7 +52,7 @@ const Banner = () => {
 
                             <div className="col-lg-6 col-sm-6 col-6 d-flex justify-content-center align-items-center  ">
                                 <div className="banner-section p-4 ">
-                                    <h1 className='carousel-title'>Healthy?</h1>
+                                    <h1 className='carousel-title'>Want Healthy?</h1>
 
                                     <h1 className='carousel-p p-4'>Order healthy and fresh food any time.</h1>
                                     <p ><small>We love making our customers happy by serving them our tasty food! High-quality ingredients mixed with excellent service is the best recipe for a successful food truck.</small></p>
@@ -74,7 +78,7 @@ const Banner = () => {
 
                             <div className="col-lg-6 col-sm-6 col-6 d-flex justify-content-center align-items-center  ">
                                 <div className="banner-section p-4 ">
-                                    <h1 className='carousel-title'>Different?</h1>
+                                    <h1 className='carousel-title'>Want Different?</h1>
 
                                     <h1 className='carousel-p p-4'>Eat whatever, eat whenever as your wish!</h1>
                                     <p ><small>We love making our customers happy by serving them our tasty food! High-quality ingredients mixed with excellent service is the best recipe for a successful food truck.</small></p>
@@ -88,7 +92,7 @@ const Banner = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </>
+        </div>
     );
 };
 

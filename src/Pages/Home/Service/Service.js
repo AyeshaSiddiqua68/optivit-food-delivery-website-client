@@ -53,7 +53,7 @@ const SingleService = ({ service }) => {
               <h4 style={{ minHeight: "60px" }}>PRICE:{price}</h4>
             </Card.Title>
             <NavLink to={`/service/${_id}`} className="w-100 btn btn-primary">
-              Book Now
+              Order Now
             </NavLink>
           </Card.Body>
         </Card>

@@ -1,6 +1,6 @@
 .carousel-title{
-    font-size: 72px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FF575A;
    
@@ -14,15 +14,15 @@
     border-radius: 20px;
 }
 .carousel-p{
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 15px;
     
 }
 .loaction-btn{
     background-color: rgb(238, 179, 169);
     color: white;
     border: 1px solid rgb(241, 140, 122);
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin: 10px;
     border-radius: 20px;
 }
@@ -30,7 +30,7 @@
     background-color:#FF575A ;
     color: white;
     border: 1px solid tomato;
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin: 10px;
     border-radius: 15px;
 }
