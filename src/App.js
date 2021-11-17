@@ -15,12 +15,13 @@ import Footer from './Pages/Shared/Footer/Footer';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home/Home';
-import Service from './Pages/Home/Service/Service';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import MyOrders from './Pages/MyOrders/MyOrders';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 import AddService from './Pages/AddService/AddService';
+import Blog from './Pages/Blog/Blog';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -41,9 +42,10 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            {/* <Route path="/service">
-              <Service></Service>
-            </Route> */}
+            <Route path="/blog">
+              <Blog></Blog>
+            </Route>
+            
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
@@ -53,7 +55,6 @@ function App() {
             <PrivateRoute path="/manageorders">
               <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
-
             <PrivateRoute path="/addservice">
               <AddService></AddService>
             </PrivateRoute>
@@ -67,8 +68,9 @@ function App() {
             <Route path="/reset">
               <ResetPassword></ResetPassword>
             </Route>
-
-
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>
