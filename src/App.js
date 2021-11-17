@@ -18,15 +18,17 @@ import Home from './Pages/Home/Home/Home';
 import Service from './Pages/Home/Service/Service';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+import MyOrders from './Pages/MyOrders/MyOrders';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-          <Header></Header> 
+          <Header></Header>
           <Switch>
-          <Route exact path="/">
+            <Route exact path="/">
               <Home></Home>
             </Route>
             <Route path="/home">
@@ -44,6 +46,12 @@ function App() {
             <PrivateRoute path="/service/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+            <PrivateRoute path="/myorders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/manageorders">
+              <ManageAllOrders></ManageAllOrders>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>
@@ -53,7 +61,7 @@ function App() {
             <Route path="/reset">
               <ResetPassword></ResetPassword>
             </Route>
-            
+
 
           </Switch>
           <Footer></Footer>

@@ -27,7 +27,7 @@ const Login = () => {
       >
         <Zoom>
           <div>
-            <h1 className="fw-bold">Please Login</h1>
+            <h1 className="text-primary fw-bold">Please Login</h1>
             <p className=" mt-2">Login with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
             <div className="mx-auto w-25 form-container ">
@@ -85,7 +85,7 @@ const Login = () => {
 
                 <button
                   type="submit"
-                  className="btn custom-btn text-white mt-2 w-100"
+                  className="btn btn-primary text-white mt-2 w-100"
                 >
                   Login
                 </button>

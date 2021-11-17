@@ -128,7 +128,7 @@ const Signup = () => {
                 </Row>
                 <button
                   type="submit"
-                  className="btn text-white custom-btn mt-2 w-100"
+                  className="btn text-white btn-primary mt-2 w-100"
                 >
                   Sign up
                 </button>
