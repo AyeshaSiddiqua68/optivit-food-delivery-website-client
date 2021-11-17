@@ -10,7 +10,7 @@ const AddService = () => {
     //add new food item
     const onSubmit = (data) => {
         axios
-            .post("http://localhost:5000/addService", data)
+            .post("https://stormy-savannah-30546.herokuapp.com/addService", data)
             .then((res) => {
                 if (res.data.insertedId) {
                     alert(" A new service added successfully !");

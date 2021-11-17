@@ -4,7 +4,7 @@ const useServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
         axios
-            .get("http://localhost:5000/services")
+            .get("https://stormy-savannah-30546.herokuapp.com/services")
             .then((res) => {
                 setServices(res.data);
             });

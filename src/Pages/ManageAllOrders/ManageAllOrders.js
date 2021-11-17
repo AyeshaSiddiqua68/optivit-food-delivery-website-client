@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
     const [confirmed, setConfirmed] = useState(0);
     useEffect(() => {
         axios
-            .get("http://localhost:5000/orders")
+            .get("https://stormy-savannah-30546.herokuapp.com/orders")
             .then((res) => {
                 setMyOrders(res.data);
             });
@@ -17,7 +17,7 @@ const ManageAllOrders = () => {
         const confirmation = window.confirm("Are you sure to delete?");
         if (confirmation) {
             axios
-                .delete(`http://localhost:5000/deletion/${id}`)
+                .delete(`https://stormy-savannah-30546.herokuapp.com/deletion/${id}`)
                 .then((res) => {
                     if (res.data === 1) {
                         const remaining = myOrders.filter((order) => order._id !== id);
@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
     }
     function confirmation(id) {
         axios
-            .patch(`http://localhost:5000/confirmation/${id}`)
+            .patch(`https://stormy-savannah-30546.herokuapp.com/confirmation/${id}`)
             .then((res) => {
                 if (res.data === 1) {
                     setConfirmed(res.data);

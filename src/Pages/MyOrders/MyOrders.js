@@ -11,7 +11,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState();
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/myorders/${email}`)
+            .get(`https://stormy-savannah-30546.herokuapp.com/myorders/${email}`)
             .then((res) => {
                 setMyOrders(res.data);
             });
@@ -21,7 +21,7 @@ const MyOrders = () => {
         const confirmation = window.confirm("Are you sure to delete?");
         if (confirmation) {
             axios
-                .delete(`http://localhost:5000/deletion/${id}`)
+                .delete(`https://stormy-savannah-30546.herokuapp.com/deletion/${id}`)
                 .then((res) => {
                     if (res.data === 1) {
                         const remaining = myOrders.filter((order) => order._id !== id);

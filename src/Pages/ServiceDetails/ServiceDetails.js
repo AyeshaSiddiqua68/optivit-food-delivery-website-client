@@ -10,10 +10,10 @@ const ServiceDetails = () => {
   const { displayName, email, photoURL } = user;
   const [service, setService] = useState({});
   const history = useHistory();
-  const {id} = useParams();
+  const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/singleservice/${id}`)
+      .get(`https://stormy-savannah-30546.herokuapp.com/singleservice/${id}`)
       .then((res) => {
         const gotService = res.data;
         setService(gotService);
@@ -28,7 +28,7 @@ const ServiceDetails = () => {
     const ordered = {
       price,
       img,
-      name, 
+      name,
       description,
       name,
       email,
@@ -39,7 +39,7 @@ const ServiceDetails = () => {
     };
 
     axios
-      .post("http://localhost:5000/book", ordered)
+      .post("https://stormy-savannah-30546.herokuapp.com/book", ordered)
       .then((res) => {
         const response = res.data;
         if (response) {
@@ -53,7 +53,7 @@ const ServiceDetails = () => {
 
   return (
     <>
-      
+
 
       <div
         style={{
@@ -64,7 +64,7 @@ const ServiceDetails = () => {
         className="pb-2"
       >
         <h1 className="text-center booking-title fw-bold mb-5">
-         Order This Item
+          Order This Item
         </h1>
         <div className="container">
           <div>
@@ -171,7 +171,7 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-     
+
     </>
   );
 };
@@ -241,8 +241,8 @@ export default ServiceDetails;
 //                 <PlaceOrder></PlaceOrder>
 //                 </div>
 //             </div>
-            
-            
+
+
 //         </div>
 //     );
 // };
