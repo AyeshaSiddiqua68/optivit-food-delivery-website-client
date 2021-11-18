@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Footer.css";
 import logo from '../../../images/logo/logo1.svg'
@@ -7,6 +6,7 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom"
+
 //footer for all pages
 const Footer = () => {
     return (

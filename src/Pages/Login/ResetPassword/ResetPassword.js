@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import Zoom from "react-reveal/Zoom";
 import useAuth from "../../../hooks/useAuth";
 
+//reset password
 const ResetPassword = () => {
     const { allAuthInfo } = useAuth();
     const history = useHistory();

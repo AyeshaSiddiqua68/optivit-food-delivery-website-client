@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import useAuth from "../../../hooks/useAuth";
 
+//all about sign up page
 const Signup = () => {
   const history = useHistory();
   const { allAuthInfo } = useAuth();

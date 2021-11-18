@@ -2,10 +2,9 @@ import { Spinner } from "react-bootstrap";
 import { Route, Redirect } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
-
+//private route set up
 function PrivateRoute(props) {
   const { children, ...rest } = props;
-
   const { allAuthInfo } = useAuth();
   const { user, loading } = allAuthInfo;
 
@@ -39,53 +38,3 @@ function PrivateRoute(props) {
 }
 
 export default PrivateRoute;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Spinner } from 'react-bootstrap';
-// import { Redirect, Route } from 'react-router';
-// import useAuth from '../../../hooks/useAuth';
-
-
-
-// //private route for showing details
-// const PrivateRoute = ({ children, ...rest }) => {
-//     const { user, isLoading } = useAuth();
-//     if (isLoading) {
-//         return <Spinner animation="border" variant="danger" />
-//     }
-//     return (
-//         <Route
-//             {...rest}
-//             render={({ location }) => user.email ? children : <Redirect
-//                 to={{
-//                     pathname: "/login",
-//                     state: { from: location }
-//                 }}
-//             ></Redirect>
-
-//             }
-//         >
-
-//         </Route>
-//     );
-// };
-
-// export default PrivateRoute;

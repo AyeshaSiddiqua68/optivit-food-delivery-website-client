@@ -13,14 +13,6 @@
     color: #fff !important;
     border-radius: 52px !important;
   }
-  /* .login {
-    display: inline-block !important;
-    background: transparent !important;
-    padding: 7px 24px !important;
-    color: #fff !important;
-    border-radius: 52px !important;
-    border: 1px solid white;
-  } */
   .navBar {
     background-color: #FFEEEE;
     position: fixed !important;
@@ -38,9 +30,6 @@
   .item{
     list-style: none;
     margin-right: 30px;
-    /* font-size: 25px;
-    font-weight: 500;
-    color: #FF575A; */
     cursor: pointer;
     padding: 5px;
     text-decoration: none; 
@@ -57,43 +46,3 @@
     border-radius: 52px !important;
   } 
   
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .menubar-container{
-    background-color: #FFEEEE;
-  
-}
-.item{
-    list-style: none;
-    margin-right: 30px;
-    font-size: 25px;
-    font-weight: 500;
-    color: #FF575A;
-    cursor: pointer;
-    padding: 5px;
-    text-decoration: none; 
-}
-.item:hover {
-   background-color: #FF575A;
-   color: white;
-   padding: 5px;
-   border-radius: 5px;
-  } */

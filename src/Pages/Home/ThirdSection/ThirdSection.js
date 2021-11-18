@@ -4,6 +4,7 @@ import image from '../../../images/thirdSection/Image-1.jpg'
 import logo1 from '../../../images/thirdSection/logo1.png'
 import logo2 from '../../../images/thirdSection/logo2.png'
 
+//home page third section
 const ThirdSection = () => {
     return (
         <div className="container">

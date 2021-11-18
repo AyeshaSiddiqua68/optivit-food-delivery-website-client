@@ -4,6 +4,8 @@ import ThirdSection from '../ThirdSection/ThirdSection';
 import FifthSection from '../FifthSection/FifthSection';
 import Service from '../Service/Service';
 import { Container } from 'react-bootstrap';
+
+//all about home page
 const Home = () => {
     return (
         <div>

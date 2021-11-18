@@ -4,6 +4,7 @@ import logo1 from '../../../images/fifthSection/icon1.png'
 import logo2 from '../../../images/fifthSection/icon2.png'
 import logo3 from '../../../images/fifthSection/icon3.png'
 
+//home page fifth section
 const FifthSection = () => {
     return (
         <div className=" full-section my-5">

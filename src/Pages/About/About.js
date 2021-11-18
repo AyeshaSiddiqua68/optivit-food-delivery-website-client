@@ -5,6 +5,7 @@ import image2 from '../../images/about/image2.jpg'
 import FifthSection from '../Home/FifthSection/FifthSection';
 import image3 from '../../images/about/image3.jpg'
 
+//about page
 const About = () => {
     return (
         <div>
