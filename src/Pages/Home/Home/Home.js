@@ -12,7 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <ThirdSection></ThirdSection>
             <Container style={{ padding: "80px 15px" }}>
-          <h1 className="text-center fw-bold ">Our Food Items</h1>
+          <h1 className="text-center fw-bold ">Our Popular Food Items</h1>
           <p className="text-center text-muted mb-4">
             In this section you can find all of our featured health care related food
             services
